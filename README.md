@@ -1,5 +1,6 @@
 # 使用wxPython+Mysql实现了一个专利管理系统
-+ [这也是武汉纺织大学](https://www.wtu.edu.cn/)软件11806班的python结课作业，导师黄晋
++ 这也是[武汉纺织大学](https://www.wtu.edu.cn/)软件11806班的python结课作业，导师黄晋.
+
 本系统的参考博客：[http://www.fangshiyu.top/article/article-list/](http://www.fangshiyu.top/article/article-list/)
 
 #### Usage
@@ -9,8 +10,8 @@
 
 第二步:
 
-     创建数据库patent，数据库需要两张表，一个是user_info，另一个是patent_info
-     ###### 数据库代码：
+     创建数据库patent，数据库需要两张表，一个是user_info，另一个是patent_info.
+     数据库代码：
 ```C
      CREATE TABLE patent_info
        (Patentid VARCHAR(5),
