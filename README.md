@@ -1,0 +1,63 @@
+# 使用wxPython+Mysql实现了一个专利管理系统
++ [这也是武汉纺织大学](https://www.wtu.edu.cn/)软件11806班的python结课作业，导师黄晋
+本系统的参考博客：[http://www.fangshiyu.top/article/article-list/](http://www.fangshiyu.top/article/article-list/)
+
+#### Usage
+第一步:
+
+    pip install  requirements.txt
+
+第二步:
+
+     创建数据库patent，数据库需要两张表，一个是user_info，另一个是patent_info
+     ###### 数据库代码：
+```C
+     CREATE TABLE patent_info
+       (Patentid VARCHAR(5),
+        PatentName VARCHAR(40),
+        PatentFunctional VARCHAR(40),
+		BaseClass VARCHAR(40),
+		RegionalCategory VARCHAR(40),
+		FunctionCategory VARCHAR(40),
+		ApplicantName VARCHAR(40),
+		ApplicantID CHAR(18),
+		ModifyTime VARCHAR(40),
+		SubmitTime VARCHAR(40),
+		AuditTime VARCHAR(40),
+		patentstate VARCHAR(40),
+		); 
+
+CREATE TABLE user_info
+       (UserCategory VARCHAR(6), 
+	    Password VARCHAR(20),
+		TrueName VARCHAR(40),
+		IDCard CHAR(18),
+		Gender VARCHAR(5),
+        Birthday VARCHAR(20),
+		Phone VARCHAR(15),
+		QQ VARCHAR(15),
+		Email VARCHAR(20),
+		UserStatus VARCHAR(8),
+		); 
+
+INSERT INTO patent_info VALUES ('1', '发明软件数据整合方法', '无', '实用性', '中国内地', '发明专利', '李春', '420683199907244218', '2018-06-30', '2018-06-30', '2018-06-30', '审核通过');
+INSERT INTO patent_info VALUES ('2', '发明软件聚合方法', '无', '实用性', '中国内地', '发明专利', '李沙', '420683199907244213', '2018-06-30', '2018-06-30', '2018-06-30', '审核通过');
+INSERT INTO patent_info VALUES ('3', '种Exce1软件数据整合方法', '无', '实用性', '中国内地', '发明专利', '李沙', '420683199907244213', '2018-06-30', '2018-06-30', '2018-06-30', '审核未通过');
+INSERT INTO patent_info VALUES ('4', '种Exce1聚合方法', '无', '实用性', '中国内地', '发明专利', '李沙', '420683199907244213', '2018-06-30', '2018-06-30', '2018-06-30', '待审核');
+INSERT INTO patent_info VALUES ('5', '一种贼牛逼的专利', '无', '实用性', '中国内地', '发明专利', '李涵', '420683199907244211', '2018-06-30', '2018-06-30', '2018-06-30', '审核未通过');
+INSERT INTO patent_info VALUES ('6', '牛逼的专利', '无', '实用性', '中国内地', '发明专利', '李涵', '420683199907244211', '2018-06-30', '2018-06-30', '2018-06-30', '审核通过');
+INSERT INTO patent_info VALUES ('7', '好牛逼的专利', '无', '实用性', '中国内地', '发明专利', '李涵', '420683199907244211', '2018-06-30', '2018-06-30', '2018-06-30', '待审核');
+
+
+INSERT INTO user_info VALUES('用户','123456','李沙','420683199907244213','男','2020-07-24','15271020426','2858756816','1020323847@qq.com','待审核')
+INSERT INTO user_info VALUES('用户','123456','李涵','420683199907244211','男','2020-07-24','15271020426','2858756816','1020323847@qq.com','审核通过')
+INSERT INTO user_info VALUES('管理员','123456','李春','420683199907244218','男','2020-04-24','15271020426','2858756816','1020323847@qq.com','审核通过')
+
+select * from patent_info
+select * from user_info
+```
+
+第三步：
+
+    运行main_page.py
+
