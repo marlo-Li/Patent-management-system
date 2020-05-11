@@ -2,8 +2,10 @@
 + 这也是[武汉纺织大学](https://www.wtu.edu.cn/)软件11806班的python结课作业.
 
 本系统的参考博客：[http://www.fangshiyu.top/article/article-list/](http://www.fangshiyu.top/article/article-list/)
+## 运行环境
+只适用于windows 10，Mac OS版在调试。后期推出！
 
-运行该系统有两种方式：
+## 运行该系统有两种方式：
 ## 第一种方式：直接运行程序
 #### Usage
 第一步:
