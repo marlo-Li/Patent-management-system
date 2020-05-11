@@ -1,7 +1,7 @@
 # 使用wxPython+Mysql实现了一个专利管理系统
 + 这也是[武汉纺织大学](https://www.wtu.edu.cn/)软件11806班的python结课作业.
 
-本系统的参考博客：[http://www.fangshiyu.top/article/article-list/](http://www.fangshiyu.top/article/article-list/)
++ 本系统的参考博客：[http://www.fangshiyu.top/article/article-list/](http://www.fangshiyu.top/article/article-list/)
 ### 运行环境
 只适用于windows 10，Mac OS版在调试。后期推出！
 
