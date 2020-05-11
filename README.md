@@ -1,8 +1,10 @@
 # 使用wxPython+Mysql实现了一个专利管理系统
-+ 这也是[武汉纺织大学](https://www.wtu.edu.cn/)软件11806班的python结课作业，导师黄晋.
++ 这也是[武汉纺织大学](https://www.wtu.edu.cn/)软件11806班的python结课作业.
 
 本系统的参考博客：[http://www.fangshiyu.top/article/article-list/](http://www.fangshiyu.top/article/article-list/)
 
+运行该系统有两种方式：
+## 第一种方式：直接运行程序
 #### Usage
 第一步:
 
@@ -62,3 +64,17 @@ select * from user_info
 
     运行main_page.py
 
+## 第二种方式：执行exe可执行文件
+多个py文件打包exe可执行文件详情请见博客[http://www.fangshiyu.top/article/article-detail/36/](http://www.fangshiyu.top/article/article-detail/36/)内容
+
+第一步：
+
+	找到main_page.zip文件直接解压缩
+
+第二步：
+
+	在解压缩的文件夹里找到main_page.exe双击即可执行
+
+第三步：
+
+	进入交互界面在设置里配置参数，连接数据库。数据库代码上附，这里不在赘述。
