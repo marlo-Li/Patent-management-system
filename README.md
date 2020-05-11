@@ -3,8 +3,8 @@
 
 + 本系统的参考博客：[http://www.fangshiyu.top/article/article-list/](http://www.fangshiyu.top/article/article-list/)
 ### 运行环境
-只适用于windows 10，Mac OS版在调试。后期推出！
-
+操作系统：只适用于windows 10，Mac OS版在调试。后期推出！
+数据库：SQL sever 2014，注意连接MySql数据库需要对源代码进行调试!
 ## 运行该系统有两种方式：
 ### 第一种方式：直接运行程序
 #### Usage
