@@ -17,8 +17,8 @@
 
      创建数据库patent，数据库需要两张表，一个是user_info，另一个是patent_info.
      数据库代码：
-```C
-     CREATE TABLE patent_info
+```sql
+CREATE TABLE patent_info
        (Patentid VARCHAR(5),
         PatentName VARCHAR(40),
         PatentFunctional VARCHAR(40),
