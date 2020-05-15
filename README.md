@@ -19,31 +19,31 @@
      数据库代码：
 ```sql
 CREATE TABLE patent_info
-       (Patentid VARCHAR(5),
-        PatentName VARCHAR(40),
+       (Patentid VARCHAR(5) NOT NULL,
+        PatentName VARCHAR(40) NOT NULL,
         PatentFunctional VARCHAR(40),
-		BaseClass VARCHAR(40),
-		RegionalCategory VARCHAR(40),
-		FunctionCategory VARCHAR(40),
-		ApplicantName VARCHAR(40),
-		ApplicantID CHAR(18),
-		ModifyTime VARCHAR(40),
+		BaseClass VARCHAR(40) NOT NULL,
+		RegionalCategory VARCHAR(40) NOT NULL,
+		FunctionCategory VARCHAR(40) NOT NULL,
+		ApplicantName VARCHAR(40) NOT NULL,
+		ApplicantID CHAR(18) NOT NULL,
+		ModifyTime VARCHAR(40) NOT NULL,
 		SubmitTime VARCHAR(40),
 		AuditTime VARCHAR(40),
-		patentstate VARCHAR(40),
+		patentstate VARCHAR(40) NOT NULL,
 		); 
 
 CREATE TABLE user_info
-       (UserCategory VARCHAR(6), 
-	    Password VARCHAR(20),
-		TrueName VARCHAR(40),
-		IDCard CHAR(18),
+       (UserCategory VARCHAR(6) NOT NULL, 
+	    Password VARCHAR(20) NOT NULL,
+		TrueName VARCHAR(40) NOT NULL,
+		IDCard CHAR(18) NOT NULL,
 		Gender VARCHAR(5),
         Birthday VARCHAR(20),
 		Phone VARCHAR(15),
 		QQ VARCHAR(15),
 		Email VARCHAR(20),
-		UserStatus VARCHAR(8),
+		UserStatus VARCHAR(8) NOT NULL,
 		); 
 
 INSERT INTO patent_info VALUES ('1', '发明软件数据整合方法', '无', '实用性', '中国内地', '发明专利', '李春', '420683199907244218', '2018-06-30', '2018-06-30', '2018-06-30', '审核通过');
