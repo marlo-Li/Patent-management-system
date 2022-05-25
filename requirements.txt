@@ -156,7 +156,7 @@ pygame==1.9.4
 PyGetWindow==0.0.8
 Pygments==2.3.1
 PyInstaller==3.4
-PyJWT==1.7.1
+PyJWT==2.4.0
 pylint==2.2.2
 PyMsgBox==1.0.7
 pymssql==2.1.4
